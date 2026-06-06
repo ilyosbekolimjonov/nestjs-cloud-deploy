@@ -1,0 +1,62 @@
+.container {
+    padding: 20px;
+
+    &__title {
+        margin-bottom: 20px;
+    }
+
+    .stats-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+        margin-bottom: 40px;
+
+        .stat-card {
+            padding: 20px;
+            border-radius: 8px;
+            color: #fff;
+            background: #34495e;
+
+            &.total {
+                background: #2980b9;
+            }
+
+            &.active {
+                background: #2ecc71;
+            }
+
+            &.inactive {
+                background: #f1c40f;
+            }
+
+            &.deleted {
+                background: #e74c3c;
+            }
+
+            .number {
+                font-size: 32px;
+                font-weight: bold;
+                margin: 10px 0 0 0;
+            }
+        }
+    }
+
+    .recent-activity-section {
+        background: #f8f9fa;
+        padding: 20px;
+        border-radius: 8px;
+        border: 1px solid #e9ecef;
+
+        .log-item {
+            padding: 10px 0;
+            border-bottom: 1px solid #dee2e6;
+            display: flex;
+            gap: 15px;
+
+            .log-time {
+                color: #6c757d;
+                font-weight: 500;
+            }
+        }
+    }
+}
